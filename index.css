@@ -20,6 +20,22 @@
 }
 
 /*Código do Léo*/
+.menu-toggle {
+  display: none;
+}
+
+/* Estilo do botão hambúrguer (visível apenas em mobile) */
+.menu-button {
+  display: none; /* Oculta inicialmente */
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
 .Navbarsite {
   display: flex;
   justify-content: center;
@@ -102,6 +118,10 @@
   width: 280px;
 }
 
+.Hamburguer {
+  display: none;
+}
+
 /*Código do Thiago*/
 #SectionThiago {
   width: 100%;
@@ -128,4 +148,87 @@
   width: 100%;
   height: 100vh;
   background-color: var(--Bege);
+}
+
+/*Parte do responsivo, mobile, tablet e etc*/
+
+@media (max-width: 768px) {
+  /*Código responsivel do léo*/
+
+  .Hamburguer {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--Marrom);
+    font-size: 32px;
+    z-index: 1;
+  }
+
+  .ItensNavBar {
+    flex-direction: column;
+    background-color: rgba(199, 161, 122, 1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(100px at 90% -20%);
+    transition: 1s ease-out;
+    pointer-events: none;
+    gap: 40px;
+    color: white;
+  }
+
+  navbar.active .ItensNavBar {
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+  }
+
+  navbar.active .Hamburguer {
+    position: fixed;
+  }
+
+  #SectionLeo {
+    height: auto;
+  }
+
+  .SectionLeoInterna {
+    flex-direction: column-reverse;
+    height: auto;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .TextoMaisGrosso {
+    font-size: 22px;
+  }
+
+  .TextoEsquerdaLeo {
+    width: 100%;
+  }
+
+  .SectionLeoInterna h1 {
+    font-size: 32px;
+  }
+
+  .TextoMenor {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .Doce {
+    width: 180px;
+    margin-top: 28px;
+  }
+
+  /*Código responsivel do Thiago*/
+
+  /*Código responsivel do Vinicius*/
+
+  /*Código responsivel do Pedro*/
+
+  /*Código responsivel do Chris*/
 }
