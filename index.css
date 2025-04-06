@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+:root {
+  --Bege: rgba(199, 161, 122, 0.5);
+  --Marrom: #5c4b3a;
+  --Laranja: #dc6d35;
+}
+
 .No-decoration {
   text-decoration: none;
   color: inherit;
@@ -13,48 +19,113 @@
   color: orange; /* Muda para laranja ao passar o mouse */
 }
 
+/*Código do Léo*/
 .Navbarsite {
   display: flex;
-  gap: 20px;
   justify-content: center;
-  width: 100%;
-  height: 10vh;
-  background-color: white;
   align-items: center;
+  width: 100%;
+  height: 12vh;
+  background-color: var(--Bege);
+  padding-top: 20px;
 }
 
+.Navbarinterna {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  align-items: center;
+  color: var(--Marrom);
+  font-size: 20px;
+  font-family: "Montserrat";
+  border-radius: 8px;
+}
 
-/*Código do Léo*/
+.Logo {
+  width: 108px;
+}
+
+.ItensNavBar {
+  display: flex;
+  gap: 80px;
+}
+
 #SectionLeo {
   width: 100%;
-  height: 100vh;
-  background-color: gray;
+  height: 88vh;
+  background-color: var(--Bege);
+  display: flex;
+  justify-content: center;
+}
+
+.SectionLeoInterna {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  gap: 120px;
+}
+
+.TextoMaisGrosso {
+  color: var(--Marrom);
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.SectionLeoInterna h1 {
+  font-size: 52px;
+  font-family: "Montserrat";
+  font-weight: 800;
+  color: var(--Marrom);
+}
+
+.sabor-magico {
+  color: var(--Laranja);
+}
+
+.TextoMenor {
+  color: var(--Marrom);
+  font-size: 32px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.TextoEsquerdaLeo {
+  width: 60%;
+}
+
+.Doce {
+  width: 300px;
 }
 
 /*Código do Thiago*/
 #SectionThiago {
   width: 100%;
   height: 100vh;
-  background-color: yellow;
+  background-color: white;
 }
 
 /*Código do Vinicius*/
 #SectionVinicius {
   width: 100%;
   height: 100vh;
-  background-color: blue;
+  background-color: var(--Bege);
 }
 
 /*Código do Pedro*/
 #SectionPedro {
   width: 100%;
   height: 100vh;
-  background-color: green;
+  background-color: white;
 }
 
 /*Código do Chris*/
 #SectionChris {
   width: 100%;
   height: 100vh;
-  background-color: red;
+  background-color: var(--Bege);
 }
