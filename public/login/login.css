@@ -47,7 +47,7 @@
   width: 380px;
   font-family: "Montserrat";
   color: var(--Marrom);
-  border: 0.1px solid var(--Marrom);
+  border: none;
   border-radius: 12px;
   outline: none;
   padding: 12px;
@@ -64,6 +64,22 @@
   font-family: "Montserrat";
   color: var(--Laranja);
   text-decoration: none;
+}
+
+.botao-submit {
+  padding: 6px 40px;
+  color: var(--Marrom);
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.botao-submit:hover {
+  color: var(--Laranja);
 }
 
 /*Cadastro*/
@@ -87,7 +103,7 @@
   width: 380px;
   font-family: "Montserrat";
   color: var(--Marrom);
-  border: 0.1px solid var(--Marrom);
+  border: none;
   border-radius: 12px;
   outline: none;
   padding: 12px;
