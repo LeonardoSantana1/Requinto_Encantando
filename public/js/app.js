@@ -1,6 +1,6 @@
 //Variaveis
 const Hamburguer = document.querySelector(".Hamburguer");
-const navbar = document.querySelector("navbar");
+const navbar = document.querySelector("nav");
 const menuLinks = document.querySelectorAll(".ItensNavBar a");
 
 //Faz com que ao clicar no menu hamburguer a navbar receba uma nova classe chama "active" e ao clicar novamente tira a classe
