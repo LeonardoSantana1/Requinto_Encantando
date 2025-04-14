@@ -7,10 +7,8 @@ const menuLinks = document.querySelectorAll(".ItensNavBar a");
 Hamburguer.addEventListener("click", () => navbar.classList.toggle("active"));
 
 //Faz com que cada a de .ItensNavBar remova o active da navbar ao ser clicaco, assim fechando o menu hamburguer
-menuLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      navbar.classList.remove("active");
-    });
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navbar.classList.remove("active");
   });
-
-
+});
