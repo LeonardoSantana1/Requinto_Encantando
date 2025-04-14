@@ -17,7 +17,13 @@
 
     <!--Javascript-->
     <!--Defer faz o js carregar depois do html-->
-    <script defer src="app.js"></script>
+    <script defer src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+
+    <!--Coisas do Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
   </head>
   <body>
     <!--Navbar (Menu de cima do site)-->
@@ -45,6 +51,10 @@
 
           <a href="#SectionChris" class="No-decoration">Chris</a>
         </div>
+
+        <a class="Link_Login" href="login.html">
+          <img src="imagens/user.png" class="Login" />
+        </a>
       </div>
     </navbar>
 
