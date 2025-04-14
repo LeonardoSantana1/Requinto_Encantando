@@ -116,6 +116,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Mostra o "Cadastre-se" de novo
     document.getElementById("cadastrar-se").style.display = "block";
   });
+
+  //Volta pro inicio
+  document.getElementById("back-to-home")?.addEventListener("click", () => {
+    window.location.href = "../index.html";
+  });
 });
 
 // ==== MENU DO USUÁRIO ====

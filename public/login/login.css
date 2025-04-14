@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 96vh;
   justify-content: center;
   align-items: center;
 }
@@ -79,6 +79,30 @@
 }
 
 .botao-submit:hover {
+  color: var(--Laranja);
+}
+
+.volta {
+  display: flex;
+  gap: 4px;
+  height: 4vh;
+}
+
+.botao-voltar {
+  padding: 0 px;
+  color: var(--Marrom);
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 12px;
+  margin-top: 16px;
+}
+
+.botao-voltar:hover {
   color: var(--Laranja);
 }
 
