@@ -65,10 +65,15 @@ document.addEventListener("DOMContentLoaded", () => {
     .getElementById("signupForm")
     ?.addEventListener("submit", async (e) => {
       e.preventDefault();
+      const submitBtn = e.target.querySelector("button[type='submit']");
+      const originalText = submitBtn.textContent;
       const email = document.getElementById("signup-email").value;
       const password = document.getElementById("signup-password").value;
 
       try {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Criando...";
+
         const userCredential = await auth.createUserWithEmailAndPassword(
           email,
           password
@@ -83,10 +88,14 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("signup-password").value = "";
         document.getElementById("signup-form").style.display = "none";
         document.getElementById("login-form").style.display = "block";
+        document.getElementById("cadastrar-se").style.display = "block";
 
         alert("Cadastro realizado com sucesso! Faça login para continuar.");
       } catch (error) {
         alert(`Erro no cadastro: ${error.message}`);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
       }
     });
 
@@ -95,11 +104,17 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     document.getElementById("login-form").style.display = "none";
     document.getElementById("signup-form").style.display = "block";
+
+    // Aqui esconde o "Cadastre-se"
+    document.getElementById("cadastrar-se").style.display = "none";
   });
 
   document.getElementById("back-to-login")?.addEventListener("click", () => {
     document.getElementById("signup-form").style.display = "none";
     document.getElementById("login-form").style.display = "block";
+
+    // Mostra o "Cadastre-se" de novo
+    document.getElementById("cadastrar-se").style.display = "block";
   });
 });
 
