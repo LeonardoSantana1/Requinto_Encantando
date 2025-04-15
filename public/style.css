@@ -162,13 +162,18 @@
 .slide-dinamico {
   min-width: 100%;
   width: 100%;
-  padding: 20px;
+  padding: 0px 80px;
   box-sizing: border-box;
   flex-shrink: 0;
-  overflow: hidden; /* Impede que o conteúdo vaze */
-  word-wrap: break-word; /* Quebra palavras muito longas */
-  overflow-y: auto; /* Adiciona scroll vertical se necessário */
-  max-height: 360px; /* Altura máxima considerando o padding */
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-y: auto;
+  max-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .slide-dinamico div {
