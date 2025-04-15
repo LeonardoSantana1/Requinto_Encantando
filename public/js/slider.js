@@ -31,25 +31,25 @@
       const slide = document.createElement("div");
       slide.classList.add("slide-dinamico");
       slide.innerHTML = `
-          <div>
-            <h3>Nenhum comentário ainda</h3>
-            <p>Seja o primeiro a deixar seu comentário!</p>
-          </div>
-        `;
+        <div>
+          <h3 class="nome-comentario">Nenhum comentário ainda</h3>
+          <p class="texto-comentario">Seja o primeiro a deixar seu comentário!</p>
+        </div>
+      `;
       slidesContainer.appendChild(slide);
     } else {
       comentarios.forEach((comentario) => {
         const slide = document.createElement("div");
         slide.classList.add("slide-dinamico");
         slide.innerHTML = `
-            <div>
-              <h3>${comentario.nome || "Anônimo"}</h3>
-              <p style="white-space: pre-wrap;">${
-                comentario.mensagem || "Sem mensagem"
-              }</p>
-              <div class="estrelas">${"⭐".repeat(comentario.nota || 0)}</div>
-            </div>
-          `;
+          <div>
+            <h3 class="nome-comentario">${comentario.nome || "Anônimo"}</h3>
+            <p class="texto-comentario" style="white-space: pre-wrap;">${
+              comentario.mensagem || "Sem mensagem"
+            }</p>
+            <div class="estrelas">${"⭐".repeat(comentario.nota || 0)}</div>
+          </div>
+        `;
         slidesContainer.appendChild(slide);
       });
     }

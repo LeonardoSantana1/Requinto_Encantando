@@ -151,6 +151,7 @@
   border-radius: 16px;
   background-color: white;
   overflow: hidden;
+  font-family: "Montserrat";
 }
 
 .Slides {
@@ -202,6 +203,20 @@
 
 .next {
   right: 10px;
+}
+
+.nome-comentario {
+  color: var(--Marrom);
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.texto-comentario {
+  color: var(--Marrom);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 12px;
 }
 
 /*Código do Pedro*/
