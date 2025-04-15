@@ -18,6 +18,8 @@
     <!--Javascript-->
     <!--Defer faz o js carregar depois do html-->
     <script defer src="js/app.js"></script>
+    <script defer src="js/slider.js"></script>
+    <script defer src="js/comentarios.js"></script>
 
     <!--Coisas do Firebase-->
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
@@ -43,7 +45,7 @@
 
           <a href="#SectionThiago" class="No-decoration">Thiago</a>
 
-          <a href="#SectionVinicius" class="No-decoration">Vinicius</a>
+          <a href="#SectionComentarios" class="No-decoration">Vinicius</a>
 
           <a href="#SectionPedro" class="No-decoration">Pedro</a>
 
@@ -54,7 +56,7 @@
 
     <!--Section, aki começa as seções do site-->
 
-    <!--Código do Léo-->
+    <!--Inicio-->
     <section id="SectionLeo">
       <div class="SectionLeoInterna">
         <div class="TextoEsquerdaLeo">
@@ -84,8 +86,44 @@
     <!--Código do Thiago-->
     <section id="SectionThiago"></section>
 
-    <!--Código do Vinicius-->
-    <section id="SectionVinicius"></section>
+    <!--Comentários-->
+    <section id="SectionComentarios">
+      <div class="SectionComentariosInterna">
+        <img
+          src="imagens/comentarios.png"
+          style="width: 320px; margin-top: 26px"
+        />
+
+        <div class="Slider">
+          <div class="Slides"></div>
+          <button class="prev">&#10094;</button>
+          <button class="next">&#10095;</button>
+        </div>
+
+        <section id="SectionFormulario">
+          <h2>Deixe seu comentário</h2>
+          <form id="comentarioForm">
+            <input type="text" id="nome" placeholder="Seu nome" required />
+            <input type="email" id="email" placeholder="Seu email" required />
+            <textarea
+              id="mensagem"
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+            <label for="nota">Nota:</label>
+            <select id="nota" required>
+              <option value="">Escolha uma nota</option>
+              <option value="1">1 estrela</option>
+              <option value="2">2 estrelas</option>
+              <option value="3">3 estrelas</option>
+              <option value="4">4 estrelas</option>
+              <option value="5">5 estrelas</option>
+            </select>
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </section>
 
     <!--Código do Pedro-->
     <section id="SectionPedro"></section>

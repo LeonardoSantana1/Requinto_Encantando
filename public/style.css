@@ -122,7 +122,6 @@
   display: none;
 }
 
-
 /*Código do Thiago*/
 #SectionThiago {
   width: 100%;
@@ -130,11 +129,73 @@
   background-color: white;
 }
 
-/*Código do Vinicius*/
-#SectionVinicius {
+/*Comentários*/
+#SectionComentarios {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: var(--Bege);
+}
+
+.SectionComentariosInterna {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin-top: 30px;
+  border-radius: 16px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.Slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-dinamico {
+  min-width: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  overflow: hidden; /* Impede que o conteúdo vaze */
+  word-wrap: break-word; /* Quebra palavras muito longas */
+  overflow-y: auto; /* Adiciona scroll vertical se necessário */
+  max-height: 360px; /* Altura máxima considerando o padding */
+}
+
+.slide-dinamico div {
+  max-width: 100%; /* Garante que o conteúdo interno não ultrapasse */
+}
+
+/* Botões de navegação */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
 
 /*Código do Pedro*/
