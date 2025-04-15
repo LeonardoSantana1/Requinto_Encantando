@@ -21,9 +21,7 @@
 
     <!--Coisas do Firebase-->
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-    <script src="login/auth.js" defer></script>
   </head>
   <body>
     <!--Navbar (Menu de cima do site)-->
@@ -50,26 +48,6 @@
           <a href="#SectionPedro" class="No-decoration">Pedro</a>
 
           <a href="#SectionChris" class="No-decoration">Chris</a>
-        </div>
-
-        <!-- Ícone de usuário (visível quando não logado) -->
-        <a href="login/login.html" id="loginLink" class="login-link">
-          <img src="imagens/user.png" alt="Login" class="login-icon" />
-        </a>
-
-        <!-- Menu do usuário (aparece quando logado) -->
-        <div class="user-menu" id="userMenu" style="display: none">
-          <button class="user-button" id="userButton">
-            <img
-              src="imagens/user_logged.png"
-              alt="Usuário"
-              class="user-icon"
-            />
-          </button>
-          <div class="dropdown-content" id="dropdownContent">
-            <p id="userRole" class="user-role">Cargo: Visitante</p>
-            <button id="logoutButton">Sair</button>
-          </div>
         </div>
       </div>
     </nav>
