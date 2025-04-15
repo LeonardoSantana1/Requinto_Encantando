@@ -12,23 +12,3 @@ menuLinks.forEach((link) => {
     navbar.classList.remove("active");
   });
 });
-
-//Evento com  o menu de login
-document.addEventListener("DOMContentLoaded", () => {
-  const userBtn = document.getElementById("userButton");
-  const dropdown = document.getElementById("dropdownContent");
-
-  if (userBtn && dropdown) {
-    userBtn.addEventListener("click", (e) => {
-      e.stopPropagation(); // impede que o clique feche o menu na mesma hora
-      dropdown.style.display =
-        dropdown.style.display === "block" ? "none" : "block";
-    });
-
-    document.addEventListener("click", (e) => {
-      if (!userBtn.contains(e.target) && !dropdown.contains(e.target)) {
-        dropdown.style.display = "none";
-      }
-    });
-  }
-});
