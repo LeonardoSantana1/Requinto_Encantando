@@ -1,59 +1,85 @@
 (() => {
-    let currentSlide = 0;
-    const slidesContainer = document.querySelector(".Slides");
-    let totalSlides = 0;
-  
-    function updateSlider() {
-      if (totalSlides === 0) return;
-      slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-  
-    function addSlidesToSlider(comentarios) {
-      slidesContainer.innerHTML = "";
-      
-      if (!comentarios || comentarios.length === 0) {
-        // Adiciona um slide padrão quando não há comentários
-        const slide = document.createElement("div");
-        slide.classList.add("slide-dinamico");
-        slide.innerHTML = `
-          <div style="padding: 20px;">
+  let currentSlide = 0;
+  const slidesContainer = document.querySelector(".Slides");
+  let totalSlides = 0;
+  let isTransitioning = false;
+
+  // Função para atualizar a posição do slide
+  function updateSlider() {
+    if (totalSlides === 0 || isTransitioning) return;
+
+    isTransitioning = true;
+    slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+    // Remove o flag quando a transição terminar
+    const handleTransitionEnd = () => {
+      isTransitioning = false;
+      slidesContainer.removeEventListener("transitionend", handleTransitionEnd);
+    };
+
+    slidesContainer.addEventListener("transitionend", handleTransitionEnd);
+  }
+
+  // Função para adicionar slides
+  function addSlidesToSlider(comentarios) {
+    isTransitioning = true; // Bloqueia durante a atualização
+
+    slidesContainer.style.transition = "none"; // Desativa transição temporariamente
+    slidesContainer.innerHTML = "";
+
+    if (!comentarios || comentarios.length === 0) {
+      const slide = document.createElement("div");
+      slide.classList.add("slide-dinamico");
+      slide.innerHTML = `
+          <div>
             <h3>Nenhum comentário ainda</h3>
             <p>Seja o primeiro a deixar seu comentário!</p>
           </div>
         `;
-        slidesContainer.appendChild(slide);
-      } else {
-        // Adiciona os slides dos comentários
-        comentarios.forEach((comentario) => {
-          const slide = document.createElement("div");
-          slide.classList.add("slide-dinamico");
-          slide.innerHTML = `
+      slidesContainer.appendChild(slide);
+    } else {
+      comentarios.forEach((comentario) => {
+        const slide = document.createElement("div");
+        slide.classList.add("slide-dinamico");
+        slide.innerHTML = `
             <div>
-              <h3>${comentario.nome}</h3>
-              <p>${comentario.mensagem}</p>
-              <div>${"⭐".repeat(comentario.nota)}</div>
+              <h3>${comentario.nome || "Anônimo"}</h3>
+              <p style="white-space: pre-wrap;">${
+                comentario.mensagem || "Sem mensagem"
+              }</p>
+              <div class="estrelas">${"⭐".repeat(comentario.nota || 0)}</div>
             </div>
           `;
-          slidesContainer.appendChild(slide);
-        });
-      }
-      
-      totalSlides = slidesContainer.children.length;
-      currentSlide = 0; // Reseta para o primeiro slide
-      updateSlider();
+        slidesContainer.appendChild(slide);
+      });
     }
-  
-    document.querySelector(".next").addEventListener("click", () => {
-      if (totalSlides <= 1) return;
-      currentSlide = (currentSlide + 1) % totalSlides;
-      updateSlider();
-    });
-  
-    document.querySelector(".prev").addEventListener("click", () => {
-      if (totalSlides <= 1) return;
-      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-      updateSlider();
-    });
-  
-    window.addSlidesToSlider = addSlidesToSlider;
-  })();
+
+    totalSlides = slidesContainer.children.length;
+    currentSlide = 0;
+    slidesContainer.style.transform = "translateX(0)";
+
+    // Força o navegador a reconhecer a mudança
+    void slidesContainer.offsetWidth;
+
+    // Reativa a transição
+    slidesContainer.style.transition =
+      "transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)";
+    isTransitioning = false;
+  }
+
+  // Event listeners para os botões
+  document.querySelector(".next").addEventListener("click", () => {
+    if (totalSlides <= 1 || isTransitioning) return;
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateSlider();
+  });
+
+  document.querySelector(".prev").addEventListener("click", () => {
+    if (totalSlides <= 1 || isTransitioning) return;
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateSlider();
+  });
+
+  // Torna a função acessível globalmente
+  window.addSlidesToSlider = addSlidesToSlider;
+})();
