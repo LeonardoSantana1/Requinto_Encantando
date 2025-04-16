@@ -145,13 +145,15 @@
 .Slider {
   position: relative;
   width: 100%;
-  max-width: 800px;
-  height: 400px;
+  height: 260px;
   margin-top: 30px;
   border-radius: 16px;
   background-color: white;
   overflow: hidden;
   font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Slides {
@@ -163,14 +165,14 @@
 
 .slide-dinamico {
   min-width: 100%;
-  width: 100%;
+  width: 80%;
   padding: 0px 80px;
   box-sizing: border-box;
   flex-shrink: 0;
   overflow: hidden;
   word-wrap: break-word;
   overflow-y: auto;
-  max-height: 360px;
+  max-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -198,11 +200,11 @@
 }
 
 .prev {
-  left: 10px;
+  left: 42px;
 }
 
 .next {
-  right: 10px;
+  right: 42px;
 }
 
 .nome-comentario {
@@ -217,6 +219,80 @@
   font-weight: 500;
   font-size: 1rem;
   margin-bottom: 12px;
+}
+
+#SectionFormulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#comentarioForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 80%;
+  gap: 12px;
+  color: var(--Marrom);
+}
+
+#comentarioForm #nome,
+#email {
+  width: 60%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-family: "Montserrat";
+  color: var(--Marrom);
+  font-weight: 600;
+}
+
+#mensagem {
+  width: 60%;
+  padding-inline: 12px;
+  padding-bottom: 36px;
+  padding-top: 12px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-family: "Montserrat";
+  color: var(--Marrom);
+  font-weight: 600;
+  resize: none;
+}
+
+#nota {
+  width: 62%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-family: "Montserrat";
+  color: var(--Marrom);
+  font-weight: 600;
+  resize: none;
+}
+
+#ButtonSubmit {
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-family: "Montserrat";
+  color: var(--Marrom);
+  font-weight: 600;
+  resize: none;
+  width: 200px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#ButtonSubmit:hover {
+  color: var(--Laranja);
 }
 
 /*Código do Pedro*/

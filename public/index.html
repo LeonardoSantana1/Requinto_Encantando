@@ -101,25 +101,35 @@
         </div>
 
         <section id="SectionFormulario">
-          <h2>Deixe seu comentário</h2>
+          <h2
+            style="
+              font-family: Montserrat;
+              color: var(--Marrom);
+              margin-top: 20px;
+              font-weight: 800;
+            "
+          >
+            Deixe seu comentário
+          </h2>
           <form id="comentarioForm">
             <input type="text" id="nome" placeholder="Seu nome" required />
             <input type="email" id="email" placeholder="Seu email" required />
             <textarea
               id="mensagem"
               placeholder="Sua mensagem"
+              maxlength="300"
               required
             ></textarea>
-            <label for="nota">Nota:</label>
+
             <select id="nota" required>
               <option value="">Escolha uma nota</option>
-              <option value="1">1 estrela</option>
-              <option value="2">2 estrelas</option>
-              <option value="3">3 estrelas</option>
-              <option value="4">4 estrelas</option>
-              <option value="5">5 estrelas</option>
+              <option value="1">1 Estrela</option>
+              <option value="2">2 Estrelas</option>
+              <option value="3">3 Estrelas</option>
+              <option value="4">4 Estrelas</option>
+              <option value="5">5 Estrelas</option>
             </select>
-            <button type="submit">Enviar</button>
+            <button id="ButtonSubmit" type="submit">Enviar</button>
           </form>
         </section>
       </div>
