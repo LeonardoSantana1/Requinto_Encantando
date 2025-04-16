@@ -55,13 +55,13 @@
   background-color: white;
   align-items: center;
   color: var(--Marrom);
-  font-size: 20px;
+  font-size: 1.7vw;
   font-family: "Montserrat";
   border-radius: 8px;
 }
 
 .Logo {
-  width: 108px;
+  width: 7.5vw;
 }
 
 .ItensNavBar {
@@ -89,11 +89,11 @@
   color: var(--Marrom);
   font-family: "Playfair Display";
   font-weight: 700;
-  font-size: 28px;
+  font-size: 2vw;
 }
 
 .SectionLeoInterna h1 {
-  font-size: 48px;
+  font-size: 3vw;
   font-family: "Montserrat";
   font-weight: 800;
   color: var(--Marrom);
@@ -105,7 +105,7 @@
 
 .TextoMenor {
   color: var(--Marrom);
-  font-size: 32px;
+  font-size: 2.2vw;
   font-family: "Montserrat";
   font-weight: 400;
 }
@@ -115,7 +115,7 @@
 }
 
 .Doce {
-  width: 280px;
+  width: 20vw;
 }
 
 .Hamburguer {
@@ -146,7 +146,6 @@
   position: relative;
   width: 100%;
   height: 260px;
-  margin-top: 30px;
   border-radius: 16px;
   background-color: white;
   overflow: hidden;
@@ -210,15 +209,19 @@
 .nome-comentario {
   color: var(--Marrom);
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1.6vw;
   margin-bottom: 8px;
 }
 
 .texto-comentario {
   color: var(--Marrom);
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2vw;
   margin-bottom: 12px;
+}
+
+.estrelas {
+  font-size: 1.2vw;
 }
 
 #SectionFormulario {
@@ -249,6 +252,7 @@
   font-family: "Montserrat";
   color: var(--Marrom);
   font-weight: 600;
+  font-size: 1.2vw;
 }
 
 #mensagem {
@@ -263,10 +267,11 @@
   color: var(--Marrom);
   font-weight: 600;
   resize: none;
+  font-size: 1.2vw;
 }
 
 #nota {
-  width: 62%;
+  width: 40%;
   padding: 12px;
   border: none;
   outline: none;
@@ -275,6 +280,13 @@
   color: var(--Marrom);
   font-weight: 600;
   resize: none;
+  font-size: 1.2vw;
+}
+
+#nota option {
+  font-family: "Montserrat";
+  color: var(--Laranja);
+  max-width: 50px;
 }
 
 #ButtonSubmit {
@@ -289,6 +301,7 @@
   width: 200px;
   margin-bottom: 20px;
   cursor: pointer;
+  font-size: 1.2vw;
 }
 
 #ButtonSubmit:hover {

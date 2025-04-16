@@ -45,7 +45,7 @@
 
           <a href="#SectionThiago" class="No-decoration">Thiago</a>
 
-          <a href="#SectionComentarios" class="No-decoration">Vinicius</a>
+          <a href="#SectionComentarios" class="No-decoration">Comentários</a>
 
           <a href="#SectionPedro" class="No-decoration">Pedro</a>
 
@@ -91,7 +91,7 @@
       <div class="SectionComentariosInterna">
         <img
           src="imagens/comentarios.png"
-          style="width: 320px; margin-top: 26px"
+          style="width: 22vw; margin-top: 20px"
         />
 
         <div class="Slider">
@@ -107,13 +107,14 @@
               color: var(--Marrom);
               margin-top: 20px;
               font-weight: 800;
+              font-size: 2vw;
             "
           >
             Deixe seu comentário
           </h2>
           <form id="comentarioForm">
             <input type="text" id="nome" placeholder="Seu nome" required />
-            <input type="email" id="email" placeholder="Seu email" required />
+            <input type="email" id="email" placeholder="Seu e-mail" required />
             <textarea
               id="mensagem"
               placeholder="Sua mensagem"
@@ -121,14 +122,14 @@
               required
             ></textarea>
 
-            <select id="nota" required>
-              <option value="">Escolha uma nota</option>
-              <option value="1">1 Estrela</option>
-              <option value="2">2 Estrelas</option>
-              <option value="3">3 Estrelas</option>
-              <option value="4">4 Estrelas</option>
-              <option value="5">5 Estrelas</option>
-            </select>
+              <select id="nota" required>
+                <option value="">Escolha uma nota</option>
+                <option value="1">1 Estrela</option>
+                <option value="2">2 Estrelas</option>
+                <option value="3">3 Estrelas</option>
+                <option value="4">4 Estrelas</option>
+                <option value="5">5 Estrelas</option>
+              </select>
             <button id="ButtonSubmit" type="submit">Enviar</button>
           </form>
         </section>
