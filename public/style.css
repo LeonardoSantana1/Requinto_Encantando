@@ -19,7 +19,7 @@
   color: orange; /* Muda para laranja ao passar o mouse */
 }
 
-/*Código do Léo*/
+/*-------------------- Navbar e Inicio -----------------------------------*/
 .menu-toggle {
   display: none;
 }
@@ -137,14 +137,71 @@
   height: auto;
 }
 
-/*Beneficios*/
+/*---------------------------- Beneficios -----------------------------*/
 #SectionBeneficio {
   width: 100%;
   height: 100vh;
+  padding-bottom: 100px;
   background-color: white;
+  display: flex;
+  justify-content: center;
 }
 
-/*Comentários*/
+.SectionBeneficiosInterna {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  gap: 40px;
+}
+
+.SectionBeneficiosInterna .Beneficio {
+  width: 22vw;
+  margin-top: 20px;
+}
+
+.QuadradoImg {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  background-color: var(--Bege);
+}
+
+.Vitaminas {
+  display: flex;
+  width: 100;
+  font-family: "Montserrat";
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
+}
+
+.TituloVitamina {
+  font-size: 2.5vw;
+  color: var(--Marrom);
+  font-weight: 700;
+}
+
+.TextoBeneficio {
+  width: 68%;
+}
+
+.TextoBeneficio p {
+  font-size: 1.7vw;
+  color: var(--Marrom);
+  font-weight: 400;
+}
+
+.Fibras {
+  display: flex;
+  width: 100;
+  font-family: "Montserrat";
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+/*------------------------ Comentários --------------------*/
 #SectionComentarios {
   width: 100%;
   height: auto;
