@@ -56,9 +56,9 @@
 
     <!--Section, aki começa as seções do site-->
 
-    <!--Inicio-->
-    <section id="SectionLeo">
-      <div class="SectionLeoInterna">
+    <!--Section Inicio-->
+    <section id="SectionInicio">
+      <div class="SectionInicioInterna">
         <div class="TextoEsquerdaLeo">
           <h3 class="TextoMaisGrosso">
             Uma experiência de sabores que encanta
@@ -83,16 +83,15 @@
       </div>
     </section>
 
-    <!--Código do Thiago-->
-    <section id="SectionThiago"></section>
+    <div class="Separador"><img src="imagens/separador.png" /></div>
 
-    <!--Comentários-->
+    <!--Section Beneficios-->
+    <section id="SectionBeneficio"></section>
+
+    <!--Section Comentários-->
     <section id="SectionComentarios">
       <div class="SectionComentariosInterna">
-        <img
-          src="imagens/comentarios.png"
-          class="ComentariosImg"
-        />
+        <img src="imagens/comentarios.png" class="ComentariosImg" />
 
         <div class="Slider">
           <div class="Slides"></div>
@@ -101,11 +100,7 @@
         </div>
 
         <section id="SectionFormulario">
-          <h2
-          class="TituloSectionComentarios"
-          >
-            Deixe seu comentário
-          </h2>
+          <h2 class="TituloSectionComentarios">Deixe seu comentário</h2>
           <form id="comentarioForm">
             <input type="text" id="nome" placeholder="Seu nome" required />
             <input type="email" id="email" placeholder="Seu e-mail" required />
@@ -116,14 +111,14 @@
               required
             ></textarea>
 
-              <select id="nota" required>
-                <option value="">Escolha uma nota</option>
-                <option value="1">1 Estrela</option>
-                <option value="2">2 Estrelas</option>
-                <option value="3">3 Estrelas</option>
-                <option value="4">4 Estrelas</option>
-                <option value="5">5 Estrelas</option>
-              </select>
+            <select id="nota" required>
+              <option value="">Escolha uma nota</option>
+              <option value="1">1 Estrela</option>
+              <option value="2">2 Estrelas</option>
+              <option value="3">3 Estrelas</option>
+              <option value="4">4 Estrelas</option>
+              <option value="5">5 Estrelas</option>
+            </select>
             <button id="ButtonSubmit" type="submit">Enviar</button>
           </form>
         </section>
