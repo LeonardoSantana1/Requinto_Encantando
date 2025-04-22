@@ -420,25 +420,6 @@
 
 /*=========================== Parte do responsivo, mobile, tablet e etc =================================*/
 
-@media (min-width: 1460px) {
-  .QuadradoImg {
-    width: 480px;
-    height: 480px;
-  }
-
-  .AboboraBeneficio {
-    width: 520px;
-  }
-
-  .CocoBeneficio {
-    width: 400px;
-  }
-
-  #SectionBeneficio {
-    padding-bottom: 160px;
-  }
-}
-
 @media (max-width: 768px) {
   /*Código responsivel do Inicio e navbar*/
 
@@ -668,5 +649,33 @@
   /*Separador de Section*/
   .Separador {
     margin-top: -20px;
+  }
+}
+
+@media (min-width: 1460px) {
+  .QuadradoImg {
+    width: 480px;
+    height: 480px;
+  }
+
+  .AboboraBeneficio {
+    width: 520px;
+  }
+
+  .CocoBeneficio {
+    width: 400px;
+  }
+
+  #SectionBeneficio {
+    padding-bottom: 160px;
+  }
+
+  /*Separador*/
+  .Separador {
+    margin-top: -88px;
+  }
+
+  .Separa1 {
+    width: 1200px;
   }
 }
