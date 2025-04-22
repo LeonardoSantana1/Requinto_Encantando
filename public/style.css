@@ -145,7 +145,8 @@
 .Slider {
   position: relative;
   width: 100%;
-  height: 260px;
+  height: auto;
+  padding: 40px 0px;
   border-radius: 16px;
   background-color: white;
   overflow: hidden;
@@ -204,6 +205,14 @@
 
 .next {
   right: 42px;
+}
+
+.TituloSectionComentarios {
+  font-family: "Montserrat";
+  color: var(--Marrom);
+  margin-top: 20px;
+  font-weight: 800;
+  font-size: 2vw;
 }
 
 .nome-comentario {
@@ -308,6 +317,11 @@
   color: var(--Laranja);
 }
 
+.ComentariosImg {
+  width: 22vw;
+  margin-top: 20px;
+}
+
 /*Código do Pedro*/
 #SectionPedro {
   width: 100%;
@@ -325,7 +339,7 @@
 /*Parte do responsivo, mobile, tablet e etc*/
 
 @media (max-width: 768px) {
-  /*Código responsivel do léo*/
+  /*Código responsivel do Inicio e navbar*/
 
   .Hamburguer {
     display: block;
@@ -352,6 +366,7 @@
     pointer-events: none;
     gap: 40px;
     color: white;
+    font-size: 20px;
   }
 
   nav.active .ItensNavBar {
@@ -361,6 +376,10 @@
 
   nav.active .Hamburguer {
     position: fixed;
+  }
+
+  .Logo {
+    width: 80px;
   }
 
   #SectionLeo {
@@ -396,11 +415,55 @@
     margin-top: 28px;
   }
 
-  /*Código responsivel do Thiago*/
+  /*Responsivel do Thiago*/
 
-  /*Código responsivel do Vinicius*/
+  /*Responsivel dos Comentários*/
+  .ComentariosImg {
+    width: 200px;
+  }
 
-  /*Código responsivel do Pedro*/
+  .nome-comentario {
+    font-size: 20px;
+  }
 
-  /*Código responsivel do Chris*/
+  .texto-comentario {
+    font-size: 16px;
+  }
+
+  .estrelas {
+    font-size: 16px;
+  }
+
+  .Slider {
+    height: auto;
+    padding: 40px 0px;
+  }
+
+  .TituloSectionComentarios {
+    font-size: 20px;
+  }
+
+  #comentarioForm #nome,
+  #email {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #mensagem {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #nota {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #ButtonSubmit {
+    font-size: 14px;
+  }
+
+  /*Responsivel do Pedro*/
+
+  /*Responsivel do Chris*/
 }
