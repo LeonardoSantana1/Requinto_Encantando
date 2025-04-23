@@ -415,7 +415,98 @@
 #SectionChris {
   width: 100%;
   height: 100vh;
+  background-color: var(--Laranja);
+}
+
+/*---------------- Footer ------------------------*/
+footer {
+  width: 100%;
   background-color: var(--Bege);
+  font-family: "Montserrat";
+}
+
+.FooterInterno {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+  gap: 80px;
+}
+
+.Navegue,
+.Contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.LinhaNavegue {
+  width: 180px;
+  background-color: var(--Laranja);
+  height: 4px;
+}
+
+.Navegue h1,
+.Contato h1 {
+  color: var(--Laranja);
+  font-size: 2.2vw;
+}
+
+.Navegue a {
+  color: var(--Marrom);
+  text-decoration: none;
+  transition: 0.3s ease-in;
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.Navegue a:hover {
+  color: var(--Laranja);
+}
+
+.LinhaContato {
+  width: 180px;
+  background-color: var(--Laranja);
+  height: 4px;
+}
+
+.Zap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ZapImg {
+  width: 28px;
+}
+
+.Contato h2 {
+  font-size: 1.4vw;
+  color: var(--Marrom);
+}
+
+.Contato a {
+  color: var(--Marrom);
+  text-decoration: none;
+  transition: 0.3s ease-in;
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.Contato a:hover {
+  color: var(--Laranja);
+}
+
+.Copyright {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Marrom);
+  font-weight: 600;
+  padding: 20px 0px;
+  font-size: 1.4vw;
 }
 
 /*=========================== Parte do responsivo, mobile, tablet e etc =================================*/
@@ -616,6 +707,32 @@
   /*Responsivel do Pedro*/
 
   /*Responsivel do Chris*/
+
+  /*---------------- Footer ---------------------*/
+  .FooterInterno {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .Contato h1,
+  .Navegue h1 {
+    font-size: 28px;
+  }
+
+  .Navegue a,
+  .Contato a {
+    font-size: 18px;
+  }
+
+  .Copyright p {
+    width: 80%;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .Contato h2 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -677,5 +794,11 @@
 
   .Separa1 {
     width: 1200px;
+  }
+
+  /*----------------------- Footer ------------------*/
+  .LinhaContato,
+  .LinhaNavegue {
+    width: 300px;
   }
 }
