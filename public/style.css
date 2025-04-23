@@ -66,7 +66,7 @@
 
 .ItensNavBar {
   display: flex;
-  gap: 80px;
+  gap: 40px;
 }
 
 #SectionInicio {
@@ -404,11 +404,45 @@
   margin-top: 20px;
 }
 
-/*Código do Pedro*/
-#SectionPedro {
+/*---------------- Quem Somos ------------------*/
+#SectionQuemSomos {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.QuemSomosInterno {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  font-family: "Montserrat";
+}
+
+.QuemSomosImg {
+  width: 22vw;
+}
+
+.QuemSomosInterno div h1 {
+  color: var(--Marrom);
+  font-size: 2vw;
+}
+
+.QuemSomosInterno div p {
+  color: var(--Marrom);
+  font-size: 1.7vw;
+  font-weight: 400;
+}
+
+.TextosQuemSomos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
 }
 
 /*Código do Chris*/
@@ -589,7 +623,7 @@ footer {
     margin-top: 28px;
   }
 
-  /*Separadores de section*/
+  /*------------------ Separadores de section ---------------------------*/
   .Separador {
     margin-top: -50px;
     z-index: 1;
@@ -604,7 +638,7 @@ footer {
     height: auto;
   }
 
-  /*Responsivel dos Beneficios*/
+  /*---------------------------- Responsivel dos Beneficios -----------------------*/
   .SectionBeneficiosInterna .Beneficio {
     width: 200px;
   }
@@ -658,7 +692,7 @@ footer {
     width: 120px;
   }
 
-  /*Responsivel dos Comentários*/
+  /*------------------ Responsivel dos Comentários ------------------*/
   .ComentariosImg {
     width: 200px;
   }
@@ -704,7 +738,22 @@ footer {
     font-size: 14px;
   }
 
-  /*Responsivel do Pedro*/
+  /*---------------- Responsivel de Quem Somos -------------------*/
+  #SectionQuemSomos {
+    padding: 20px 0px;
+  }
+
+  .QuemSomosImg {
+    width: 200px;
+  }
+
+  .QuemSomosInterno .TextosQuemSomos h1 {
+    font-size: 20px;
+  }
+
+  .QuemSomosInterno .TextosQuemSomos p {
+    font-size: 16px;
+  }
 
   /*Responsivel do Chris*/
 
