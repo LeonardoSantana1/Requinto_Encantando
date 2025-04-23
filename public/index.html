@@ -20,7 +20,8 @@
     <script defer src="js/app.js"></script>
     <script defer src="js/slidercomentarios.js"></script>
     <script defer src="js/comentarios.js"></script>
-    <script defer src="js/sliderquemsomos.js"></script>
+    <script defer type="module" src="js/sliderquemsomos.js"></script>
+    <script defer type="module" src="js/quemsomos.js"></script>
 
     <!--Coisas do Firebase-->
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
@@ -215,7 +216,11 @@
 
         <div class="SliderQuemSomos">
           <div class="SliderQuemSomosInterno">
-            
+            <div class="quem-somos-slider">
+              <button class="prev-qs">‹</button>
+              <div class="QuemSomosSlides"></div>
+              <button class="next-qs">›</button>
+            </div>
           </div>
         </div>
       </div>
