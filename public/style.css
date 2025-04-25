@@ -125,7 +125,6 @@
 
 .Separador {
   margin-top: -51px;
-  z-index: 1;
   position: relative;
   pointer-events: none;
   display: flex;
@@ -263,7 +262,7 @@
 }
 
 .slide-dinamico div {
-  max-width: 100%; /* Garante que o conteúdo interno não ultrapasse */
+  max-width: 100%;
 }
 
 /* Botões de navegação */
@@ -277,7 +276,6 @@
   cursor: pointer;
   padding: 10px;
   border-radius: 50%;
-  z-index: 10;
   color: var(--Marrom);
 }
 
@@ -525,7 +523,7 @@
 }
 
 .texto-qs h3 {
-  font-size: 24px;
+  font-size: 2vw;
   font-weight: 800;
   margin-bottom: 8px;
   color: var(--Marrom);
@@ -674,7 +672,7 @@ footer {
     cursor: pointer;
     color: var(--Marrom);
     font-size: 32px;
-    z-index: 1;
+    z-index: 1001;
   }
 
   .ItensNavBar {
@@ -693,6 +691,7 @@ footer {
     gap: 40px;
     color: white;
     font-size: 20px;
+    z-index: 1000;
   }
 
   nav.active .ItensNavBar {
@@ -745,7 +744,6 @@ footer {
   /*------------------ Separadores de section ---------------------------*/
   .Separador {
     margin-top: -50px;
-    z-index: 1;
     position: relative;
     pointer-events: none;
     display: flex;
@@ -984,6 +982,11 @@ footer {
 }
 
 @media (min-width: 1460px) {
+  .ItensNavBar {
+    gap: 80px;
+  }
+
+  /*---------- Beneficios ------------------*/
   .QuadradoImg {
     width: 480px;
     height: 480px;
@@ -1001,13 +1004,47 @@ footer {
     padding-bottom: 160px;
   }
 
-  /*Separador*/
+  /*-------------------Comentarios ------------------------*/
+  #SectionFormulario {
+    padding: 40px 0px;
+  }
+
+  /*-------------- Separador ----------------*/
   .Separador {
     margin-top: -88px;
   }
 
   .Separa1 {
     width: 1200px;
+  }
+
+  /*----------- Quem Somos -----------------*/
+  .SliderQuemSomosInterno {
+    height: 900px;
+  }
+
+  .quem-somos-slider {
+    width: 96%;
+  }
+
+  .texto-qs {
+    height: 680px;
+    max-width: 1200px;
+  }
+
+  .foto-qs {
+    width: 520px;
+    height: 700px;
+  }
+
+  .prev-qs,
+  .next-qs {
+    font-size: 100px;
+  }
+
+  .prev,
+  .next {
+    font-size: 60px;
   }
 
   /*----------------------- Footer ------------------*/
