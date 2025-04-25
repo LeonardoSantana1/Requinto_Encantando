@@ -432,7 +432,7 @@
   font-size: 2vw;
 }
 
-.QuemSomosInterno div p {
+.QuemSomosInterno .TextosQuemSomos p {
   color: var(--Marrom);
   font-size: 1.7vw;
   font-weight: 400;
@@ -488,12 +488,8 @@
 
 .bloco-qs {
   background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Conteúdo do slide (imagem + texto) */
 .conteudo-qs {
   display: flex;
   flex-direction: row;
@@ -503,41 +499,50 @@
   width: 100%;
 }
 
-/* Imagem */
-.foto-qs img {
-  width: 220px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+.foto-qs {
+  background-color: white;
+  height: 360px;
+  width: 260px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-inline: 40px;
 }
 
-/* Texto */
+.foto-qs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
 .texto-qs {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 500px;
+  max-width: 560px;
+  padding: 20px;
 }
 
 .texto-qs h3 {
   font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 15px;
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: var(--Marrom);
 }
 
 .texto-qs p {
-  font-size: 16px;
-  line-height: 1.6;
-  white-space: pre-wrap;
+  font-family: "Montserrat";
+  color: var(--Marrom);
+  font-size: 1.7vw;
 }
 
-/* Botões de navegação */
 .prev-qs,
 .next-qs {
-  font-size: 32px;
+  font-size: 62px;
   background: none;
   border: none;
-  color: #3a2e26;
+  color: var(--Marrom);
   cursor: pointer;
   transition: transform 0.2s;
 }
@@ -867,6 +872,52 @@ footer {
 
   .QuemSomosInterno .TextosQuemSomos p {
     font-size: 16px;
+  }
+
+  .SliderQuemSomosInterno {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .SliderQuemSomos {
+    margin-top: 20px;
+  }
+
+  .conteudo-qs {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0px;
+    width: 100%;
+  }
+
+  .foto-qs {
+    height: 220px;
+    width: 140px;
+  }
+
+  .texto-qs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .texto-qs h3 {
+    font-size: 24px;
+  }
+
+  .texto-qs p {
+    font-size: 16px;
+  }
+
+  .prev-qs,
+  .next-qs {
+    font-size: 46px;
   }
 
   /*Responsivel do Chris*/
