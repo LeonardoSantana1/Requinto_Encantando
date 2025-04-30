@@ -22,6 +22,7 @@
     <script defer src="js/comentarios.js"></script>
     <script defer type="module" src="js/sliderquemsomos.js"></script>
     <script defer type="module" src="js/quemsomos.js"></script>
+    <script defer type="module" src="js/formcontato.js"></script>
 
     <!--Coisas do Firebase-->
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
@@ -51,7 +52,7 @@
 
           <a href="#SectionQuemSomos" class="No-decoration">Quem Somos</a>
 
-          <a href="#SectionChris" class="No-decoration">Chris</a>
+          <a href="#SectionContato" class="No-decoration">Chris</a>
         </div>
       </div>
     </nav>
@@ -226,8 +227,35 @@
       </div>
     </section>
 
-    <!--Código do Chris-->
-    <section id="SectionChris"></section>
+    <!--Section Contato-->
+    <section id="SectionContato">
+      <div class="SectionContatoInterno">
+        <form
+          action="https://sheetdb.io/api/v1/bzmds3mtdvs4k"
+          method="POST"
+          name="RequinteEncantado"
+          id="sheetdb-form"
+        >
+          <div class="form-container">
+            <label for="nome">Nome completo</label>
+            <input type="text" name="data[nome]" id="nomeContato" required />
+
+            <label for="email">E-mail </label>
+            <input type="email" name="data[email]" id="e-mail" required />
+
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              type="text"
+              name="data[mensagem]"
+              id="mensagemContato"
+              required
+            ></textarea>
+
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <!--Rodapé (Parte final do site)-->
     <footer>
