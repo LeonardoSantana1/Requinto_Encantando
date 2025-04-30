@@ -123,6 +123,8 @@
   display: none;
 }
 
+/*---------------Separadores de section desktop ------------*/
+
 .Separador {
   margin-top: -51px;
   position: relative;
@@ -131,7 +133,15 @@
   justify-content: center;
 }
 
-.Separador img {
+.Separador2 {
+  margin-bottom: -50px;
+  position: relative;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+
+.SeparadorImg {
   max-width: 80vw;
   height: auto;
 }
@@ -140,7 +150,7 @@
 #SectionBeneficio {
   width: 100%;
   height: auto;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -213,6 +223,7 @@
 }
 /*------------------------ Comentários --------------------*/
 #SectionComentarios {
+  padding-top: 40px;
   width: 100%;
   height: auto;
   background-color: var(--Bege);
@@ -908,6 +919,14 @@ footer {
     justify-content: center;
   }
 
+  .Separador2 {
+    margin-bottom: -42px;
+    position: relative;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+  }
+
   .Separador img {
     max-width: 88vw;
     height: auto;
@@ -960,7 +979,7 @@ footer {
 
   #SectionBeneficio {
     height: auto;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
   }
 
   .CocoBeneficio {
@@ -1167,6 +1186,10 @@ footer {
   .Separador {
     margin-top: -28px;
   }
+
+  .Separador2 {
+    margin-bottom: -24px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1178,6 +1201,10 @@ footer {
   .Separador {
     margin-top: -24px;
   }
+
+  .Separador2 {
+    margin-bottom: -22px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1188,6 +1215,10 @@ footer {
   /*Separador de Section*/
   .Separador {
     margin-top: -20px;
+  }
+
+  .Separador2 {
+    margin-bottom: -18px;
   }
 }
 
@@ -1211,10 +1242,14 @@ footer {
   }
 
   #SectionBeneficio {
-    padding-bottom: 160px;
+    padding-bottom: 140px;
   }
 
   /*-------------------Comentarios ------------------------*/
+  #SectionComentarios {
+    padding-top: 80px;
+  }
+
   #SectionFormulario {
     padding: 40px 0px;
   }
@@ -1224,7 +1259,11 @@ footer {
     margin-top: -88px;
   }
 
-  .Separa1 {
+  .Separador2 {
+    margin-bottom: -88px;
+  }
+
+  .SeparadorImg {
     width: 1200px;
   }
 
