@@ -1026,7 +1026,30 @@ footer {
     font-size: 46px;
   }
 
-  /*Responsivel do Chris*/
+  /*--------- Contato ----------------*/
+  .ContatoImg {
+    width: 200px;
+  }
+
+  .textoContato h1 {
+    font-size: 24px;
+  }
+
+  .textoContato p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .Zap a {
+    font-size: 16px;
+  }
+
+  #nomeContato,
+  #e-mail,
+  #mensagemContato,
+  .SubmitContato {
+    font-size: 16px;
+  }
 
   /*---------------- Footer ---------------------*/
   .FooterInterno {
@@ -1080,7 +1103,7 @@ footer {
 
 @media (max-width: 320px) {
   #SectionInicio {
-    height: 780px;
+    height: auto;
   }
 
   /*Separador de Section*/
