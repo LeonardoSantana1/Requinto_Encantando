@@ -153,8 +153,20 @@
         <section id="SectionFormulario">
           <h2 class="TituloSectionComentarios">Deixe seu comentário</h2>
           <form id="comentarioForm">
-            <input type="text" id="nome" placeholder="Seu nome" required />
-            <input type="email" id="email" placeholder="Seu e-mail" required />
+            <input
+              maxlength="120"
+              type="text"
+              id="nome"
+              placeholder="Seu nome"
+              required
+            />
+            <input
+              maxlength="160"
+              type="email"
+              id="email"
+              placeholder="Seu e-mail"
+              required
+            />
             <textarea
               id="mensagem"
               placeholder="Sua mensagem"
@@ -230,6 +242,29 @@
     <!--Section Contato-->
     <section id="SectionContato">
       <div class="SectionContatoInterno">
+        <img class="ContatoImg" src="imagens/contato.png" alt="Contato" />
+
+        <div class="textoContato">
+          <h1>Fale Conosco!</h1>
+          <p>
+            Está planejando uma festa e quer impressionar seus convidados com um
+            <span class="sabor-magico"
+              >doce de abóbora com coco inesquecível</span
+            >? Ou talvez tenha uma receita especial em mente e queira uma versão
+            adaptada? Conte-nos seus desejos!
+            <span class="sabor-magico">Envie-nos uma mensagem.</span> Estamos
+            ansiosos para te responder! Para mais informações entre em contato
+            no whatsapp abaixo
+          </p>
+
+          <div class="Zap">
+            <img class="ZapImg" src="imagens/whatsappx.png" />
+            <a href="https://wa.me/5518997305664" target="_blank"
+              >18997305664</a
+            >
+          </div>
+        </div>
+
         <form
           action="https://sheetdb.io/api/v1/bzmds3mtdvs4k"
           method="POST"
@@ -237,24 +272,41 @@
           id="sheetdb-form"
         >
           <div class="form-container">
-            <label for="nome">Nome completo</label>
-            <input type="text" name="data[nome]" id="nomeContato" required />
+            <input
+              placeholder="Seu nome"
+              type="text"
+              name="data[nome]"
+              id="nomeContato"
+              maxlength="120"
+              required
+            />
 
-            <label for="email">E-mail </label>
-            <input type="email" name="data[email]" id="e-mail" required />
+            <input
+              placeholder="Seu e-mail"
+              type="email"
+              name="data[email]"
+              id="e-mail"
+              maxlength="160"
+              required
+            />
 
-            <label for="mensagem">Mensagem</label>
             <textarea
+              placeholder="Sua mensagem"
               type="text"
               name="data[mensagem]"
               id="mensagemContato"
+              maxlength="300"
               required
             ></textarea>
 
-            <button type="submit">Enviar</button>
+            <button class="SubmitContato" type="submit">Enviar</button>
           </div>
         </form>
       </div>
+    </section>
+
+    <section  id="Local">
+
     </section>
 
     <!--Rodapé (Parte final do site)-->
@@ -278,7 +330,7 @@
             <img class="ZapImg" src="imagens/whatsappx.png" />
             <h2>WhatsApp:</h2>
           </div>
-          <a href="#">18997305664</a>
+          <a href="https://wa.me/5518997305664" target="_blank">18997305664</a>
         </div>
       </div>
 
