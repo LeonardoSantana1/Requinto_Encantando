@@ -868,6 +868,7 @@ footer {
   #SectionInicio {
     height: auto;
     padding-bottom: 40px;
+    padding-top: 20px;
   }
 
   .SectionInicioInterna {
@@ -896,7 +897,6 @@ footer {
 
   .Doce {
     width: 180px;
-    margin-top: 28px;
   }
 
   /*------------------ Separadores de section ---------------------------*/
@@ -1158,8 +1158,9 @@ footer {
 
 @media (max-width: 480px) {
   #SectionInicio {
-    height: 668px;
+    height: auto;
     padding-bottom: 20px;
+    padding-top: 20px;
   }
 
   /*Separador de Section*/
@@ -1170,7 +1171,7 @@ footer {
 
 @media (max-width: 375px) {
   #SectionInicio {
-    height: 720px;
+    height: auto;
   }
 
   /*Separador de Section*/
