@@ -149,6 +149,22 @@
   justify-content: center;
 }
 
+.Separador4 {
+  margin-bottom: -50px;
+  position: relative;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+
+.Separador5 {
+  margin-top: -51px;
+  position: relative;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+
 .SeparadorImg {
   max-width: 80vw;
   height: auto;
@@ -232,7 +248,7 @@
 /*------------------------ Comentários --------------------*/
 #SectionComentarios {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   width: 100%;
   height: auto;
   background-color: var(--Bege);
@@ -432,6 +448,7 @@
   display: flex;
   justify-content: center;
   padding: 40px 0px;
+  padding-top: 20px;
 }
 
 .QuemSomosInterno {
@@ -589,7 +606,7 @@
   width: 100%;
   height: auto;
   background-color: var(--Bege);
-  padding: 40px 0px;
+  padding: 60px 0px;
   font-family: "Montserrat";
 }
 
@@ -698,6 +715,7 @@
   width: 100%;
   height: auto;
   padding: 40px 0px;
+  padding-top: 8px;
 }
 
 .LocalImg {
@@ -922,26 +940,22 @@ footer {
   /*------------------ Separadores de section ---------------------------*/
   .Separador {
     margin-top: -50px;
-    position: relative;
-    pointer-events: none;
-    display: flex;
-    justify-content: center;
   }
 
   .Separador2 {
     margin-bottom: -42px;
-    position: relative;
-    pointer-events: none;
-    display: flex;
-    justify-content: center;
   }
 
   .Separador3 {
     margin-bottom: -42px;
-    position: relative;
-    pointer-events: none;
-    display: flex;
-    justify-content: center;
+  }
+
+  .Separador4 {
+    margin-bottom: -42px;
+  }
+
+  .Separador5 {
+    margin-top: -45px;
   }
 
   .Separador img {
@@ -1212,6 +1226,10 @@ footer {
     padding-top: 40px;
   }
 
+  #SectionContato {
+    padding-top: 40px;
+  }
+
   /*Separador de Section*/
   .Separador {
     margin-top: -28px;
@@ -1223,6 +1241,14 @@ footer {
 
   .Separador3 {
     margin-bottom: -24px;
+  }
+
+  .Separador4 {
+    margin-bottom: -24px;
+  }
+
+  .Separador5 {
+    margin-top: -24px;
   }
 }
 
@@ -1243,6 +1269,14 @@ footer {
     padding-top: 40px;
   }
 
+  #SectionQuemSomos {
+    padding-top: 40px;
+  }
+
+  #Local {
+    padding-top: 20px;
+  }
+
   /*Separador de Section*/
   .Separador {
     margin-top: -24px;
@@ -1254,6 +1288,14 @@ footer {
 
   .Separador3 {
     margin-bottom: -22px;
+  }
+
+  .Separador4 {
+    margin-bottom: -22px;
+  }
+
+  .Separador5 {
+    margin-top: -22px;
   }
 }
 
@@ -1274,6 +1316,10 @@ footer {
     padding-top: 40px;
   }
 
+  #SectionQuemSomos {
+    padding-top: 40px;
+  }
+
   /*Separador de Section*/
   .Separador {
     margin-top: -20px;
@@ -1285,6 +1331,14 @@ footer {
 
   .Separador3 {
     margin-bottom: -18px;
+  }
+
+  .Separador4 {
+    margin-bottom: -18px;
+  }
+
+  .Separador5 {
+    margin-top: -19px;
   }
 }
 
@@ -1311,6 +1365,15 @@ footer {
     padding-bottom: 140px;
   }
 
+  #SectionContato {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  #SectionLocal {
+    padding-top: 100px;
+  }
+
   /*-------------------Comentarios ------------------------*/
   #SectionComentarios {
     padding-top: 80px;
@@ -1330,6 +1393,14 @@ footer {
   }
 
   .Separador3 {
+    margin-top: -86px;
+  }
+
+  .Separador4 {
+    margin-bottom: -86px;
+  }
+
+  .Separador5 {
     margin-top: -86px;
   }
 
