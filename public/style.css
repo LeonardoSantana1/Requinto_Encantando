@@ -165,6 +165,14 @@
   justify-content: center;
 }
 
+.Separador6 {
+  margin-bottom: -50px;
+  position: relative;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+
 .SeparadorImg {
   max-width: 80vw;
   height: auto;
@@ -770,6 +778,7 @@ footer {
   width: 100%;
   background-color: var(--Bege);
   font-family: "Montserrat";
+  padding-top: 40px;
 }
 
 .FooterInterno {
@@ -956,6 +965,10 @@ footer {
 
   .Separador5 {
     margin-top: -45px;
+  }
+
+  .Separador6 {
+    margin-bottom: -43px;
   }
 
   .Separador img {
@@ -1181,6 +1194,10 @@ footer {
   }
 
   /*---------------- Footer ---------------------*/
+  footer {
+    padding-top: 20px;
+  }
+
   .FooterInterno {
     flex-direction: column;
     gap: 20px;
@@ -1230,6 +1247,10 @@ footer {
     padding-top: 40px;
   }
 
+  footer {
+    padding-top: 8px;
+  }
+
   /*Separador de Section*/
   .Separador {
     margin-top: -28px;
@@ -1249,6 +1270,10 @@ footer {
 
   .Separador5 {
     margin-top: -24px;
+  }
+
+  .Separador6 {
+    margin-bottom: -24px;
   }
 }
 
@@ -1277,6 +1302,10 @@ footer {
     padding-top: 20px;
   }
 
+  footer {
+    padding-top: 0px;
+  }
+
   /*Separador de Section*/
   .Separador {
     margin-top: -24px;
@@ -1296,6 +1325,10 @@ footer {
 
   .Separador5 {
     margin-top: -22px;
+  }
+
+  .Separador6 {
+    margin-bottom: -22px;
   }
 }
 
@@ -1340,6 +1373,10 @@ footer {
   .Separador5 {
     margin-top: -19px;
   }
+
+  .Separador6 {
+    margin-bottom: -19px;
+  }
 }
 
 @media (min-width: 1460px) {
@@ -1374,6 +1411,14 @@ footer {
     padding-top: 100px;
   }
 
+  footer {
+    padding-top: 100px;
+  }
+
+  .Copyright {
+    margin-top: 40px;
+  }
+
   /*-------------------Comentarios ------------------------*/
   #SectionComentarios {
     padding-top: 80px;
@@ -1402,6 +1447,10 @@ footer {
 
   .Separador5 {
     margin-top: -86px;
+  }
+
+  .Separador6 {
+    margin-bottom: -86px;
   }
 
   .SeparadorImg {
