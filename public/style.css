@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 :root {
   --Bege: rgba(199, 161, 122, 0.5);
   --Marrom: #5c4b3a;
