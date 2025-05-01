@@ -371,7 +371,7 @@
   align-items: center;
   margin-top: 20px;
   width: 80%;
-  gap: 12px;
+  gap: 8px;
   color: var(--Marrom);
 }
 
@@ -430,17 +430,19 @@
   outline: none;
   border-radius: 12px;
   font-family: "Montserrat";
-  color: var(--Marrom);
+  color: white;
   font-weight: 600;
   resize: none;
   width: 200px;
   margin-bottom: 20px;
   cursor: pointer;
   font-size: 1.6vw;
+  background-color: var(--Laranja);
+  transition: ease-in 0.5s;
 }
 
 #ButtonSubmit:hover {
-  color: var(--Laranja);
+  color: var(--Marrom);
 }
 
 .ComentariosImg {
@@ -714,6 +716,11 @@
   margin-bottom: 20px;
   cursor: pointer;
   font-size: 1.6vw;
+  transition: ease-in 0.5s;
+}
+
+.SubmitContato:hover {
+  color: var(--Marrom);
 }
 
 /*------------------ Local --------------------*/
