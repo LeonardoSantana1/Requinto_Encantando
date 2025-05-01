@@ -1440,6 +1440,10 @@ footer {
     gap: 80px;
   }
 
+  .Navbarsite {
+    padding-top: 40px;
+  }
+
   /*-------------- Inicio ----------------*/
   .TextoEsquerdaLeo {
     width: 80%;
