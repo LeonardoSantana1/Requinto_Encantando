@@ -1092,6 +1092,11 @@ footer {
     font-size: 14px;
   }
 
+  .next,
+  .prev {
+    background: none !important;
+  }
+
   /*---------------- Responsivel de Quem Somos -------------------*/
   #SectionQuemSomos {
     padding: 20px 0px;
