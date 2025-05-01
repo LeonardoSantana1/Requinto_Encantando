@@ -477,7 +477,7 @@
 }
 
 .LogoQuemSomos {
-  width: 30vw;
+  width: 420px;
   position: absolute;
   margin-top: 20px;
 }
@@ -1109,7 +1109,7 @@ footer {
 
   .LogoQuemSomos {
     margin-top: 0px;
-    width: 50vw;
+    width: 380px;
   }
 
   .TextosQuemSomos {
@@ -1283,7 +1283,7 @@ footer {
 
   /*------- Quem somos ---------*/
   .LogoQuemSomos {
-    width: 80vw;
+    width: 340px;
     margin-top: 0px;
   }
 
@@ -1348,6 +1348,7 @@ footer {
 
   /*-------- Quem Somos ----------*/
   .LogoQuemSomos {
+    width: 300px;
     margin-top: 20px;
   }
 
@@ -1400,6 +1401,7 @@ footer {
 
   /*-------- Quem Somos ----------*/
   .LogoQuemSomos {
+    width: 260px;
     margin-top: 20px;
   }
 
@@ -1557,6 +1559,7 @@ footer {
   }
 
   .LogoQuemSomos {
+    width: 760px;
     margin-top: 60px;
   }
 
