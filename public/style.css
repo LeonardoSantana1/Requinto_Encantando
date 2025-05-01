@@ -321,6 +321,7 @@
   padding: 10px;
   border-radius: 50%;
   color: var(--Marrom);
+  background: none !important;
 }
 
 .prev {
