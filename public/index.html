@@ -15,7 +15,7 @@
         if (typeof AOS !== "undefined") {
           AOS.init({
             duration: 800,
-            once: true,
+            once: false,
           });
         } else {
           console.error("AOS não carregou!");
@@ -81,14 +81,14 @@
     <section id="SectionInicio">
       <div class="SectionInicioInterna">
         <div class="TextoEsquerdaLeo">
-          <h3 class="TextoMaisGrosso">
+          <h3 data-aos="zoom-in" data-aos-delay="600" class="TextoMaisGrosso">
             Uma experiência de sabores que encanta
           </h3>
-          <h1>
+          <h1 data-aos="zoom-in" data-aos-delay="800">
             Melhore seu dia com um
             <span class="sabor-magico">sabor mágico</span>
           </h1>
-          <h3 class="TextoMenor">
+          <h3 data-aos="zoom-in" data-aos-delay="1000" class="TextoMenor">
             Um doce que conquista pelo paladar e encanta pelos olhos. Nosso Doce
             de Abóbora é uma criação artesanal que une a doçura da abóbora e à
             frescura do coco em camadas cuidadosamente preparadas.
@@ -99,6 +99,8 @@
             src="imagens/doce.png"
             alt="Foto do Doce de aboboras em camadas"
             class="Doce"
+            data-aos="zoom-out"
+            data-aos-delay="200"
           />
         </div>
       </div>
@@ -115,9 +117,14 @@
     <!--Section Beneficios-->
     <section id="SectionBeneficio">
       <div class="SectionBeneficiosInterna">
-        <img class="Beneficio" src="imagens/beneficios.png" alt="Beneficios" />
+        <img
+          data-aos="zoom-in"
+          class="Beneficio"
+          src="imagens/beneficios.png"
+          alt="Beneficios"
+        />
 
-        <div class="Vitaminas">
+        <div class="Vitaminas" data-aos="fade-down">
           <div class="QuadradoImg">
             <img
               class="AboboraBeneficio"
@@ -138,7 +145,7 @@
           </div>
         </div>
 
-        <div class="Fibras">
+        <div class="Fibras" data-aos="fade-up">
           <div class="QuadradoImg">
             <img
               class="CocoBeneficio"
@@ -172,7 +179,12 @@
     <!--Section Comentários-->
     <section id="SectionComentarios">
       <div class="SectionComentariosInterna">
-        <img src="imagens/comentarios.png" class="ComentariosImg" />
+        <img
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          src="imagens/comentarios.png"
+          class="ComentariosImg"
+        />
 
         <div class="Slider">
           <div class="Slides"></div>
@@ -184,6 +196,8 @@
           <h2 class="TituloSectionComentarios">Deixe seu comentário</h2>
           <form id="comentarioForm">
             <input
+              data-aos="zoom-in"
+              data-aos-delay="200"
               maxlength="120"
               type="text"
               id="nome"
@@ -191,6 +205,8 @@
               required
             />
             <input
+              data-aos="zoom-in"
+              data-aos-delay="600"
               maxlength="160"
               type="email"
               id="email"
@@ -198,13 +214,15 @@
               required
             />
             <textarea
+              data-aos="zoom-in"
+              data-aos-delay="1000"
               id="mensagem"
               placeholder="Sua mensagem"
               maxlength="300"
               required
             ></textarea>
 
-            <select id="nota" required>
+            <select id="nota" required data-aos="zoom-in" data-aos-delay="1000">
               <option value="">Escolha uma nota</option>
               <option value="1">1 Estrela</option>
               <option value="2">2 Estrelas</option>
@@ -212,7 +230,14 @@
               <option value="4">4 Estrelas</option>
               <option value="5">5 Estrelas</option>
             </select>
-            <button id="ButtonSubmit" type="submit">Enviar</button>
+            <button
+              data-aos="fade-up"
+              data-aos-delay="1200"
+              id="ButtonSubmit"
+              type="submit"
+            >
+              Enviar
+            </button>
           </form>
         </section>
       </div>
@@ -233,16 +258,19 @@
           class="QuemSomosImg"
           src="imagens/quem_somos.png"
           alt="Quem Somos"
+          data-aos="zoom-in"
         />
 
         <img
           class="LogoQuemSomos"
           src="imagens/logo.svg"
           alt="Requinte Encantado"
+          data-aos="fade-down"
+          data-aos-delay="200"
         />
 
         <div class="TextosQuemSomos">
-          <div>
+          <div data-aos="fade-up" data-aos-delay="400">
             <h1>Missão</h1>
             <p>
               Proporcionar uma experiência única por meio de doces caseiros de
@@ -253,7 +281,7 @@
             </p>
           </div>
 
-          <div>
+          <div data-aos="fade-down" data-aos-delay="600">
             <h1>Visão</h1>
             <p>
               Ser a melhor empresa de Assis/SP e região no seguimento de doce de
@@ -262,7 +290,7 @@
             </p>
           </div>
 
-          <div>
+          <div data-aos="fade-up" data-aos-delay="800">
             <h1>Valores</h1>
             <p>
               Os valores são: Qualidade, Inovação, Saúde e bem-estar,
@@ -271,7 +299,7 @@
           </div>
         </div>
 
-        <div class="SliderQuemSomos">
+        <div class="SliderQuemSomos" data-aos="fade-up" data-aos-delay="1000">
           <div class="SliderQuemSomosInterno">
             <div class="quem-somos-slider">
               <button class="prev-qs">‹</button>
@@ -294,11 +322,16 @@
     <!--Section Contato-->
     <section id="SectionContato">
       <div class="SectionContatoInterno">
-        <img class="ContatoImg" src="imagens/contato.png" alt="Contato" />
+        <img
+          data-aos="zoom-in"
+          class="ContatoImg"
+          src="imagens/contato.png"
+          alt="Contato"
+        />
 
         <div class="textoContato">
-          <h1>Fale Conosco!</h1>
-          <p>
+          <h1 data-aos="fade-down" data-aos-delay="400">Fale Conosco!</h1>
+          <p data-aos="fade-up" data-aos-delay="600">
             Está planejando uma festa e quer impressionar seus convidados com um
             <span class="sabor-magico"
               >doce de abóbora com coco inesquecível</span
@@ -309,7 +342,7 @@
             no whatsapp abaixo
           </p>
 
-          <div class="Zap">
+          <div class="Zap" data-aos="zoom-in" data-aos-delay="800">
             <img class="ZapImg" src="imagens/whatsappx.png" />
             <a href="https://wa.me/5518997305664" target="_blank"
               >18997305664</a
@@ -325,6 +358,8 @@
         >
           <div class="form-container">
             <input
+              data-aos="zoom-in"
+              data-aos-delay="200"
               placeholder="Seu nome"
               type="text"
               name="data[nome]"
@@ -334,6 +369,8 @@
             />
 
             <input
+              data-aos="zoom-in"
+              data-aos-delay="400"
               placeholder="Seu e-mail"
               type="email"
               name="data[email]"
@@ -343,6 +380,8 @@
             />
 
             <textarea
+              data-aos="zoom-in"
+              data-aos-delay="600"
               placeholder="Sua mensagem"
               type="text"
               name="data[mensagem]"
@@ -351,7 +390,14 @@
               required
             ></textarea>
 
-            <button class="SubmitContato" type="submit">Enviar</button>
+            <button
+              data-aos="fade-up"
+              data-aos-delay="1000"
+              class="SubmitContato"
+              type="submit"
+            >
+              Enviar
+            </button>
           </div>
         </form>
       </div>
@@ -368,10 +414,15 @@
     <!--Section de Evento-->
     <section id="Local">
       <div class="LocalInterno">
-        <img class="LocalImg" src="imagens/evento.png" alt="Evento" />
+        <img
+          data-aos="zoom-in"
+          class="LocalImg"
+          src="imagens/evento.png"
+          alt="Evento"
+        />
 
         <div class="MapaText">
-          <div class="Mapa">
+          <div class="Mapa" data-aos="fade-down" data-aos-delay="800">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.1174887365273!2d-50.44008952569804!3d-22.649407728721425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94953bdbb97c3ac5%3A0xd61f79976838c175!2sUnesp%20-%20Faculdade%20de%20Ci%C3%AAncias%20e%20Letras%20(FCLAs)!5e0!3m2!1spt-BR!2sbr!4v1746043298782!5m2!1spt-BR!2sbr"
               width="100%"
@@ -384,12 +435,12 @@
           </div>
 
           <div class="TextLocal">
-            <h1>
+            <h1 data-aos="zoom-in" data-aos-delay="200">
               Venha viver um <span class="sabor-magico">dia especial</span> na
               FATEC Assis!
             </h1>
 
-            <p>
+            <p data-aos="zoom-in" data-aos-delay="400">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
               nec eleifend magna, quis suscipit elit. Suspendisse ut ante felis.
               Phasellus augue est, venenatis nec diam eu, accumsan blandit
@@ -414,29 +465,49 @@
     <footer>
       <div class="FooterInterno">
         <div class="Navegue">
-          <h1>Navegue</h1>
-          <div class="LinhaNavegue"></div>
-          <a href="#">Inicío</a>
-          <a href="SectionBeneficio">Benefícios</a>
-          <a href="#">Contato</a>
-          <a href="#">Quem Somos</a>
-          <a href="#">Evento</a>
-          <a href="#SectionComentarios">Comentários</a>
+          <h1 data-aos="zoom-in" data-aos-delay="200">Navegue</h1>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            class="LinhaNavegue"
+          ></div>
+          <a data-aos="zoom-in" data-aos-delay="600" href="#">Inicío</a>
+          <a data-aos="zoom-in" data-aos-delay="600" href="SectionBeneficio"
+            >Benefícios</a
+          >
+          <a data-aos="zoom-in" data-aos-delay="600" href="#">Contato</a>
+          <a data-aos="zoom-in" data-aos-delay="600" href="#">Quem Somos</a>
+          <a data-aos="zoom-in" data-aos-delay="600" href="#">Evento</a>
+          <a data-aos="zoom-in" data-aos-delay="600" href="#SectionComentarios"
+            >Comentários</a
+          >
         </div>
 
         <div class="Contato">
-          <h1>Contato</h1>
-          <div class="LinhaContato"></div>
-          <div class="Zap">
+          <h1 data-aos="zoom-in" data-aos-delay="200">Contato</h1>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            class="LinhaContato"
+          ></div>
+          <div data-aos="zoom-in" data-aos-delay="600" class="Zap">
             <img class="ZapImg" src="imagens/whatsappx.png" />
             <h2>WhatsApp:</h2>
           </div>
-          <a href="https://wa.me/5518997305664" target="_blank">18997305664</a>
+          <a
+            data-aos="zoom-in"
+            data-aos-delay="600"
+            href="https://wa.me/5518997305664"
+            target="_blank"
+            >18997305664</a
+          >
         </div>
       </div>
 
       <div class="Copyright">
-        <p>Copyright © 2025 Requinte Encantado.</p>
+        <p data-aos="zoom-in" data-aos-delay="800">
+          Copyright © 2025 Requinte Encantado.
+        </p>
       </div>
     </footer>
   </body>
