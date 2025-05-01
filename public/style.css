@@ -16,7 +16,7 @@
 }
 
 .No-decoration:hover {
-  color: orange; /* Muda para laranja ao passar o mouse */
+  color: orange;
 }
 
 /*-------------------- Navbar e Inicio -----------------------------------*/
@@ -26,7 +26,7 @@
 
 /* Estilo do botão hambúrguer (visível apenas em mobile) */
 .menu-button {
-  display: none; /* Oculta inicialmente */
+  display: none;
   font-size: 2rem;
   cursor: pointer;
   padding: 10px;
@@ -116,7 +116,9 @@
 }
 
 .Doce {
-  width: 20vw;
+  width: 25vw;
+  position: relative;
+  top: 30px;
 }
 
 .Hamburguer {
@@ -959,7 +961,9 @@ footer {
   }
 
   .Doce {
-    width: 180px;
+    width: 220px;
+    position: relative;
+    top: 8px;
   }
 
   /*------------------ Separadores de section ---------------------------*/
