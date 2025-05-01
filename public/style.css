@@ -472,6 +472,13 @@
 
 .QuemSomosImg {
   width: 22vw;
+  margin-bottom: 20px;
+}
+
+.LogoQuemSomos {
+  width: 30vw;
+  position: absolute;
+  margin-top: 20px;
 }
 
 .QuemSomosInterno div h1 {
@@ -490,6 +497,7 @@
   flex-direction: column;
   align-items: center;
   gap: 28px;
+  margin-top: 240px;
 }
 
 .SliderQuemSomos {
@@ -1093,6 +1101,15 @@ footer {
     width: 200px;
   }
 
+  .LogoQuemSomos {
+    margin-top: 0px;
+    width: 50vw;
+  }
+
+  .TextosQuemSomos {
+    margin-top: 240px;
+  }
+
   .QuemSomosInterno .TextosQuemSomos h1 {
     font-size: 20px;
   }
@@ -1258,6 +1275,16 @@ footer {
     padding-top: 8px;
   }
 
+  /*------- Quem somos ---------*/
+  .LogoQuemSomos {
+    width: 80vw;
+    margin-top: 0px;
+  }
+
+  .TextosQuemSomos {
+    margin-top: 200px;
+  }
+
   /*Separador de Section*/
   .Separador {
     margin-top: -28px;
@@ -1313,6 +1340,15 @@ footer {
     padding-top: 0px;
   }
 
+  /*-------- Quem Somos ----------*/
+  .LogoQuemSomos {
+    margin-top: 20px;
+  }
+
+  .TextosQuemSomos {
+    margin-top: 200px;
+  }
+
   /*Separador de Section*/
   .Separador {
     margin-top: -24px;
@@ -1356,8 +1392,13 @@ footer {
     padding-top: 40px;
   }
 
-  #SectionQuemSomos {
-    padding-top: 40px;
+  /*-------- Quem Somos ----------*/
+  .LogoQuemSomos {
+    margin-top: 20px;
+  }
+
+  .TextosQuemSomos {
+    margin-top: 148px;
   }
 
   /*Separador de Section*/
@@ -1501,6 +1542,18 @@ footer {
   }
 
   /*----------- Quem Somos -----------------*/
+  .QuemSomosImg {
+    margin-bottom: 80px;
+  }
+
+  .TextosQuemSomos {
+    margin-top: 440px;
+  }
+
+  .LogoQuemSomos {
+    margin-top: 60px;
+  }
+
   .SliderQuemSomosInterno {
     height: 900px;
   }
