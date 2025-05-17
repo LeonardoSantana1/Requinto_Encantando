@@ -1444,7 +1444,7 @@ footer {
   }
 }
 
-@media (min-width: 1460px) {
+@media (min-width: 2000px) {
   .ItensNavBar {
     gap: 80px;
   }
@@ -1577,7 +1577,7 @@ footer {
   }
 
   .SliderQuemSomosInterno {
-    height: 900px;
+    height: 90vh;
   }
 
   .quem-somos-slider {
@@ -1585,13 +1585,17 @@ footer {
   }
 
   .texto-qs {
-    height: 680px;
-    max-width: 1200px;
+    height: 68vh;
+    max-width: 40vw;
   }
 
   .foto-qs {
-    width: 520px;
-    height: 700px;
+    width: 26vw;
+    height: 72vh;
+  }
+
+  .foto-qs img {
+    object-fit: contain;
   }
 
   .prev-qs,
