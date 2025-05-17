@@ -517,7 +517,7 @@ body {
 
 .SliderQuemSomosInterno {
   width: 100%;
-  height: 480px;
+  height: 80vh;
   background-color: var(--Bege);
   display: flex;
   justify-content: center;
@@ -563,8 +563,8 @@ body {
 
 .foto-qs {
   background-color: white;
-  height: 360px;
-  width: 260px;
+  height: 60vh;
+  width: 20vw;
   position: relative;
   overflow: hidden;
   padding-top: 20px;
@@ -575,7 +575,7 @@ body {
 .foto-qs img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center bottom;
 }
 
@@ -583,7 +583,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 560px;
+  max-width: 40vw;
+  height: 60vh;
   padding: 20px;
 }
 
@@ -1157,6 +1158,9 @@ footer {
   .foto-qs {
     height: 220px;
     width: 140px;
+    padding: 0px;
+    border-radius: 100%;
+    border: 1px solid var(--Laranja);
   }
 
   .texto-qs {
