@@ -569,6 +569,7 @@ body {
   overflow: hidden;
   padding-top: 20px;
   padding-inline: 40px;
+  border-radius: 100%;
 }
 
 .foto-qs img {
