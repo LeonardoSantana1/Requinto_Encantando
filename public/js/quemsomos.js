@@ -20,6 +20,6 @@ export const Membros = [
   {
     nome: "Evandro",
     imagem: "imagens/Evandro_SemBg.png",
-    descricao: `Gestor de Marketing da Requinte Encantado. Responsável por planejar campanhas e estratégias de marketing, efetuar a análise de mercado e resultados, garantindo que chegue sempre o melhor conteúdo aos clientes.`,
+    descricao: `Gestor de Marketing da Requinte Encantado. Responsável por planejar campanhas e estratégias de marketing, efetuar a análise de mercado e resultados, garantindo que chegue sempre o melhor aos clientes.`,
   },
 ];

@@ -1151,7 +1151,7 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    gap: 0px;
+    gap: 20px;
     width: 100%;
   }
 
@@ -1161,6 +1161,10 @@ footer {
     padding: 0px;
     border-radius: 100%;
     border: 1px solid var(--Laranja);
+  }
+
+  .foto-qs img {
+    object-fit: cover;
   }
 
   .texto-qs {
